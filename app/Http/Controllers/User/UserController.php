@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     public function index()
   {
-      return view('admin.user.index');
+      return view('user.index');
   }
     
     
@@ -19,12 +19,12 @@ class UserController extends Controller
     //新規投稿画面表示
     public function add()
   {
-      return view('admin.user.create');
+      return view('user.create');
   }
   //新規投稿する
   public function create()
     {
-        return redirect('admin/user/create');
+        return redirect('user/create');
     }
 
    
