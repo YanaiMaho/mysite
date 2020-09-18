@@ -41,10 +41,10 @@
                 <div class="bar">
                     <nav class="navbar">
                     <ul class="nav-link">
-                        <li><a href="https://75caddc43e2d4773a992451c4c70a486.vfs.cloud9.us-east-2.amazonaws.com/user/index">Home</a></li>
+                        <li><a href="index">Home</a></li>
                         <li><a href="menu.html">お気に入り</a></li>
                         <li><a href="contact.html">my投稿</a></li>
-                        <li><a href="https://75caddc43e2d4773a992451c4c70a486.vfs.cloud9.us-east-2.amazonaws.com/user/create">新規投稿</a></li>
+                        <li><a href="create">新規投稿</a></li>
                         <li><a href="contact.html">ヘルプ</a></li>
                       </ul>
                 </nav>
