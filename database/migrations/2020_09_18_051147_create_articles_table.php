@@ -16,7 +16,7 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('addres');
+            $table->string('address');
             $table->string('comment');
             $table->string('image');
             $table->string('image1')->nullable();
@@ -25,6 +25,8 @@ class CreateArticlesTable extends Migration
             $table->string('anime');
             $table->string('tag')->nullable();
             $table->string('area');
+            $table->string('user_name');
+            $table->string('homepage')->nullable();
             
             $table->timestamps();
         });

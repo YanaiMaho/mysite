@@ -1,9 +1,10 @@
 @extends('layouts.user')
-@section('title', '新規投稿')
+
+@section('title', '新規投稿:ghibliwhere ジブリスポット検索・投稿サイ')
 
 @section('content')
  
-                <h2>ニュース新規作成</h2>
+              
                 <form action="{{ action('User\UserController@create') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
@@ -17,92 +18,184 @@
                     
                     
                        <div class="contents">
-                        
+                           <br/>
+                           <h2>投稿する</h2>
+    
+                            <br/>
+                            <br/>
+                            <label class="col-md-2">名前</label>
                         <div class="create-box" >
-                        <label class="col-md-2">名前</label>
-                        <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                        
+                        <input type="text" class="form-name" name="name" value="{{ old('name') }}">
                         </div>
+                         <hr>
                         
-                        
-                       <div class="create-box" >
-                        <label class="col-md-2">コメント</label>
-                        <textarea class="form-control" name="comment" rows="10">{{ old('comment') }}</textarea>
-                        </div>
-                        
-                        
-                        <div class="create-box" >
                          <label class="col-md-2">住所</label>
-                         <textarea class="form-control" name="address" rows="3">{{ old('address') }}</textarea>
+                         <div class="create-box" >
+                        
+                         <textarea class="form-address" name="address" rows="3">{{ old('address') }}</textarea>
                         </div>
+                        <hr>
+                        
+                         <label class="col-md-2">ホームページ</label>
+                         <div class="create-box" >
+                        
+                         <textarea class="form-address" name="homepage" rows="3">{{ old('homepage') }}</textarea>
+                        </div>
+                        <hr>
+                        
+                        <label class="col-md-2">コメント</label>
+                       <div class="create-box" >
+                        
+                        <textarea class="form-comment" name="comment" rows="30">{{ old('comment') }}</textarea>
+                        </div>
+                         <hr>
                         
                         
+                       
                         
-                         <div class="create-box">
+                        
                         <label class="col-md-2">作品タグ</label>
+                         <div class="create-box">
+                        
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="totoro">となりのトトロ
+                            <input type="radio" name="anime" value='totoro' {{ old('anime','totoro') == 'totoro' ? 'checked' : '' }}>
+                            <label for="となりのトトロ">となりのトトロ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="nausika">風の谷のナウシカ
+                            <input type="radio" name="anime" value='nausika' {{ old('anime','nausika') == 'nausika' ? 'checked' : '' }}>
+                            <label for="nausika">風の谷のナウシカ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="mononoke">もののけ姫
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="rapyuta">天空の城ラピュタ
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="mazyotaku">魔女の宅急便
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="kurenainobuta">紅の豚
+                            <input type="radio" name="anime" value='totoro' {{ old('anime','totoro') == 'totoro' ? 'checked' : '' }}>
+                            <label for="となりのトトロ">となりのトトロ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="rupan">カリオストロの城
+                            <input type="radio" name="anime" value='nausika' {{ old('anime','nausika') == 'nausika' ? 'checked' : '' }}>
+                            <label for="nausika">風の谷のナウシカ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="sentochihiro">千と千尋の神隠し
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="hauru">ハウルの動く城
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value="mimiwosumaseba">耳を澄ませば
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='totoro' {{ old('anime','totoro') == 'totoro' ? 'checked' : '' }}>
+                            <label for="となりのトトロ">となりのトトロ</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='nausika' {{ old('anime','nausika') == 'nausika' ? 'checked' : '' }}>
+                            <label for="nausika">風の谷のナウシカ</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
+                            <label for="mononoke">もののけ姫</label>
                             </div>
                             
+                            
                         </div>
+                        <hr>
                         
+                        
+                        <label class="col-md-2">地域</label>  
                         <div class="create-box" >
-                         <label class="col-md-2">地域</label>  
-                         <input type="radio" name="area" value="hokkaido">北海道
-                         <input type="radio" name="area" value="touhoku">東北
-                         <input type="radio" name="area" value="kanto">関東
-                         <input type="radio" name="area" value="chubu">中部
-                         <input type="radio" name="area" value="kinki">近畿
-                         <input type="radio" name="area" value="chugoku">中国
-                         <input type="radio" name="area" value="sikoku">四国
-                         <input type="radio" name="area" value="kyushu">九州
-                         <input type="radio" name="area" value="okinawa">沖縄
+                         
+                         
+                            <div class="create-radio1">
+                         <input type="radio" name="area" value='hokkaido' {{ old('area','hokkaido') == 'area' ? 'hokkaido' : '' }}>
+                            <label for="hokkaido">北海道</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='tohoku' {{ old('area','tohoku') == 'area' ? 'tohoku' : '' }}>
+                            <label for="tohoku">東北</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='hokuriku' {{ old('area','hokuriku') == 'area' ? 'hokuriku' : '' }}>
+                            <label for="hokuriku">北陸</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='koushinetsu' {{ old('area','koushinetsu') == 'area' ? 'koushinetsu' : '' }}>
+                            <label for="koushinetsu">甲信越</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='kantou' {{ old('area','kantou') == 'area' ? 'kantou' : '' }}>
+                            <label for="kantou">関東</label>
+                            </div>
+                        
                         </div>
                          
-                        <div class="create-box" >
-                        <label class="col-md-2">その他のタグ</label>
-                        <div class="create-radio3">
-                            <input type="radio" name="tag" value="mountain">山
+                         <hr>
+                         
+                         
+                         <label class="col-md-2">その他のタグ</label>
+                        <div class="create-box2" >
+                        
+                        <div class="create-radio1">
+                            <input type="radio" name="tag" value='mountain' {{ old('tag','mountain') == 'tag' ? 'mountain' : '' }}>
+                            <label for="mountain">山</label>
                             </div>
-                        <div class="create-radio3">
-                            <input type="radio" name="tag" value="river">川
+                        <div class="create-radio1">
+                            <input type="radio" name="tag" value='river' {{ old('tag','river') == 'tag' ? 'river' : '' }}>
+                            <label for="river">川</label>
                             </div>
-                        <div class="create-radio3">
-                            <input type="radio" name="tag" value="sea">海
+                        <div class="create-radio1">
+                           <input type="radio" name="tag" value='sea' {{ old('tag','sea') == 'tag' ? 'sea' : '' }}>
+                            <label for="sea">海</label>
                             </div>
-                        <div class="create-radio3">
-                            <input type="radio" name="tag" value="city">街
+                        <div class="create-radio1">
+                            <input type="radio" name="tag" value='city' {{ old('tag','city') == 'tag' ? 'city' : '' }}>
+                            <label for="city">山</label>
                             </div>
-                        <div class="create-radio3">
-                            <input type="radio" name="tag" value="scenery">景色
+                        <div class="create-radio1">
+                          <input type="radio" name="tag" value='scenery' {{ old('tag','scenery') == 'tag' ? 'scenery' : '' }}>
+                            <label for="scenery">景色</label>
+                            </div>
+                        <div class="create-radio1">
+                          <input type="radio" name="tag" value='building' {{ old('tag','building') == 'tag' ? 'building' : '' }}>
+                            <label for="scenery">建物</label>
                             </div>
                         </div>
+                        
+                        <hr>
                         
                         <div class="create-box" >
                         <label class="col-md-2">メイン画像</label>

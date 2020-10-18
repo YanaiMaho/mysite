@@ -1,0 +1,54 @@
+hr {
+  height: 2px;
+  background-color: #708090;
+  width: 90%;
+  border: none;
+  margin-bottom: 3em;
+}
+
+.col-md-2 {
+  margin-left: 5em;
+}
+
+.create-box {
+  margin-left: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.create-box2 {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.create-radio1 {
+  display: inline-block;
+  margin-top: 1em;
+  margin-right: 2em;
+}
+
+.form-name {
+  width: 50%;
+  margin-left: 20px;
+  height: 30px;
+}
+
+.form-address {
+  width: 75%;
+  margin-left: 20px;
+  height: 30px;
+}
+
+.form-comment {
+  width: 75%;
+  margin-left: 20px;
+  height: 5em;
+}
+
+.col-md-2 {
+  color: #000;
+  font-size: 19px;
+  font-weight: 500;
+}

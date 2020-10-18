@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Article;
+use App\User;
 
 
 class UserController extends Controller
@@ -38,31 +39,39 @@ public function create(Request $request)
       // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
       if (isset($form['image'])) {
         $path = $request->file('image')->store('public/image');
-        $art->image_path = basename($path);
+        $art->image = basename($path);
       } else {
-          $art->image_path = null;
+          $art->image= null;
       }
       
+      
+    
+      
       if (isset($form['image1'])) {
-        $path = $request->file('image1')->store('public/image1');
-        $art->image1_path = basename($path);
+        $path = $request->file('image')->store('public/image');
+        $art->image1 = basename($path);
       } else {
-          $art->image1_path = null;
+          $art->image1 = null;
       }
       
      if (isset($form['image2'])) {
-        $path = $request->file('image2')->store('public/image2');
-        $art->image2_path = basename($path);
+        $path = $request->file('image')->store('public/image');
+        $art->image2= basename($path);
       } else {
-          $art->image2_path = null;
+          $art->image2= null;
       }
       
       if (isset($form['image3'])) {
-        $path = $request->file('image3')->store('public/image3');
-        $art->image3_path = basename($path);
+        $path = $request->file('image')->store('public/image');
+        $art->image3= basename($path);
       } else {
-          $art->image3_path = null;
+          $art->image3= null;
       }
+      
+      $user = new User;
+      $art->user_name = $user->name;
+      
+      
 
       // フォームから送信されてきた_tokenを削除する
       unset($form['_token']);
@@ -71,33 +80,116 @@ public function create(Request $request)
       unset($form['image1']);
       unset($form['image2']);
       unset($form['image3']);
+      unset($form['user_name']);
 
       // データベースに保存する
       $art->fill($form);
       $art->save();
 
      
-     
-     return redirect('admin/news/create');
+     return view('user.index');
       // admin/news/createにリダイレクトする
      
   }
    
    
+   //投稿を閲覧
+   
+    
+    public function mypost(Request $request)
+  {
+      
+         $cond_title = $request->user_name;
+      
+          // 検索されたら検索結果を取得する
+          $posts = Article::where('user_name', $cond_title)->get();
+      
+      return view('user.post', ['posts' => $posts, 'cond_title' => $cond_title]);
+     
+  }
+   
+   
+   
+   
      //投稿を編集
-    public function edit()
-    {
-        return view('admin.user.edit');
-    }
+    public function edit(Request $request)
+  {
+       
+      $art = Article::find($request->id);
+      if (empty($art)) {
+        abort(404);    
+      }
+      return view('user.edit', ['articles_form' => $art]);
+  }
+    
+    
     //投稿をアップデート
-    public function update()
-    {
-        return redirect('admin//edit');
-    }
+    public function update(Request $request)
+  {
+      // Validationをかける
+      $this->validate($request, Article::$rules);
+      // News Modelからデータを取得する
+      $art = Article::find($request->id);
+      // 送信されてきたフォームデータを格納する
+      $articles_form = $request->all();
+     
+      if (isset($articles_form['image'])) {
+        $path = $request->file('image')->store('public/image');
+        $art->image= basename($path);
+        unset($articles_form['image']);
+      } elseif (isset($request->remove)) {
+        $art->image= null;
+        unset($articles_form['remove']);
+      }
+      
+      
+      if (isset($articles_form['image1'])) {
+        $path = $request->file('image1')->store('public/image1');
+        $art->image1= basename($path);
+        unset($articles_form['image1']);
+      } elseif (isset($request->remove)) {
+        $art->image1= null;
+        unset($articles_form['remove']);
+      }
+      
+      
+      
+      if (isset($articles_form['image2'])) {
+        $path = $request->file('image2')->store('public/image2');
+        $art->image2= basename($path);
+        unset($articles_form['image2']);
+      } elseif (isset($request->remove)) {
+        $art->image2= null;
+        unset($articles_form['remove']);
+      }
+      
+      
+      if (isset($articles_form['image3'])) {
+        $path = $request->file('image3')->store('public/image3');
+        $art->image3= basename($path);
+        unset($articles_form['image']);
+      } elseif (isset($request->remove)) {
+        $art->image3= null;
+        unset($articles_form['remove']);
+      }
+      unset($articles_form['_token']);
+      // 該当するデータを上書きして保存する
+      $art->fill($articles_form)->save();
+      
+     return redirect('user/mypost');
+  }
+   
+   
+   
     //投稿を消去
-    public function delete()
+    public function delete(Request $request)
     {
-        return redirect('admin/profile/edit');
+      
+       //該当するNews Modelを取得
+    $art = Article::find($request->id);
+    //消去する
+    $art->delete();
+    return redirect('user/mypost');
     }
     
     
@@ -105,38 +197,77 @@ public function create(Request $request)
     
     
     
-    //お気に入り登録
-    public function favor()
-    {
-        
-    }
-    //お気に入り消去
-     public function deletefavor()
-    {
-        
-    }
-    //お気に入り表示
-    public function indexfavor(){
-        
-    }
+    
+    
     
     
     
     
     //検索
-    public function search(){
-        
-    }
+   
+    public function search(Request $request)
+  {
+    
+      $cond_title = $request->input('cond_title');
+      if ($cond_title != '') {
+          // 検索されたら検索結果を取得する
+          $posts = Article::where('name', $cond_title)->get();
+      } else {
+          // それ以外はすべてのニュースを取得する
+          $posts = Article::all();
+      }
+      return view('user.search', ['posts' => $posts, 'cond_title' => $cond_title]);
+  }
+  
+  
+  
+  
     //画像で検索
-    public function imagesearch(){
-        
-    }
+   public function imagesearch(Request $request)
+  {
+      $cond_title = $request->cond_title;
+      
+          // それ以外はすべてのニュースを取得する
+          $posts = Article::all();
+      
+      return view('user.images', ['posts' => $posts, 'cond_title' => $cond_title]);
+     
+  }
+    
+    
     //animeで検索
-    public function animesearch(){
-        
+    public function animesearch(Request $request){
+         $cond_title = $request->anime;
+      
+          // 検索されたら検索結果を取得する
+          $posts = Article::where('anime', $cond_title)->get();
+      
+      return view('user.searchedPost', ['posts' => $posts, 'cond_title' => $cond_title]);
     }
+    
+    
+    
+    //areaで検索
+    public function areasearch(Request $request){
+         $cond_title = $request->area;
+      
+          // 検索されたら検索結果を取得する
+          $posts = Article::where('area', $cond_title)->get();
+      
+      return view('user.searchedPost', ['posts' => $posts, 'cond_title' => $cond_title]);
+    }
+   
+   
+   
+   
     //tagで検索
-    public function tagsearch(){
+    public function tagsearch(Request $request){
+      $cond_title = $request->tag;
+      
+          // 検索されたら検索結果を取得する
+          $posts = Article::where('tag', $cond_title)->get();
+      
+      return view('user.searchedPost', ['posts' => $posts, 'cond_title' => $cond_title]);
         
     }
     //mapで検索
@@ -147,8 +278,14 @@ public function create(Request $request)
     
     
     
-    public function show(){
-        
+    
+    
+    public function show(Request $request){
+        $art = Article::find($request->id);
+      if (empty($art)) {
+        abort(404);    
+      }
+      return view('user.show', ['articles_form' => $art]);
     }
     
     

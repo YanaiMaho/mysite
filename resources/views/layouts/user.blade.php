@@ -12,9 +12,7 @@
         {{-- 各ページごとにtitleタグを入れるために@yieldで空けておきます。 --}}
         <title>@yield('title')</title>
 
-        <!-- Scripts -->
-         {{-- Laravel標準で用意されているJavascriptを読み込みます --}}
-        <script src="{{ secure_asset('js/app.js') }}" defer></script>
+       
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -22,37 +20,104 @@
 
         <!-- Styles -->
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+       
         <link href="{{ secure_asset('css/index.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
         <link href="{{ secure_asset('css/user.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/a.css') }}" rel="stylesheet">
+        
     </head>
+  
+  
+  
+  
     <body>
-        <div id="app">
-            {{-- 画面上部に表示するナビゲーションバーです。 --}}
+        
+       
+  
+    
+     
+        
+
+   
          
-           <header>
-                <div class="bar">
-                     <a href="{{ url('/') }}"><img src="images/logo.png" alt="ロゴ">
-                </div>
-                <div class="bar">
-                     <p>観光スポット検索・投稿サイト</p>
-                </div>
-                <div class="bar">
-                    <nav class="navbar">
-                    <ul class="nav-link">
-                        <li><a href="index">Home</a></li>
-                        <li><a href="menu.html">お気に入り</a></li>
-                        <li><a href="contact.html">my投稿</a></li>
-                        <li><a href="create">新規投稿</a></li>
-                        <li><a href="contact.html">ヘルプ</a></li>
-                      </ul>
-                </nav>
-                </div>
+          
+     
+    
+      
+      
+   
+
+
+       <header class="header-4">
+  <div class="header-inner">
+    <div class="logo">
+      <h1>GhibliWhere</h1>
+    </div>
+    <nav class="header-nav">
+        
+      <div class="header-nav-item">
+          
+           <a href="index"><li class="header-nav-item-li">ホーム</li></a>
+            <a href="mypost"><li class="header-nav-item-li">my投稿</li></a>
+          <a href="create"><li class="header-nav-item-li">新規投稿</li></a>
+        
+        <form class="form2" action="{{ action('User\UserController@search') }}" method="get">
+                    
+            
+                            <input type="text" class="form2-input" name="cond_title" value= "{{ $cond_title ?? '' }}">
+                      
+                       
+                            {{ csrf_field() }}
+                            <input type="submit" class=""form2-button"" value="検索">
+                            
+                           
                 
-            </header>
-            
-            
+                      
+    </form>
+      </div>
+      <div class="header-nav-item">
+            @guest
+            <li class="header-nav-item-li">
+                            <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                        {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
+                        @else
+                           
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                                
+                           </div>
+                         
+                            @endguest   
+  
+      </div>
+    </nav>
+  </div>
+</header>
+         
+                 
+                        
+                       
+   
+    
+
+         
+                
+                       
+                     
                 
 
             <main class="py-4">
@@ -61,7 +126,7 @@
                 @yield('content')
                 </div>
             </main>
-        </div>
+        
         <footer>
                 <p><small>&copy; 2020</small></p>
         </footer>

@@ -15,4 +15,10 @@ class Article extends Model
         'area' => 'required',
        
     );
+    
+     public function users()
+    {
+      return $this->hasMany('App\User');
+
+    }
 }
