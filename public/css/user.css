@@ -266,7 +266,7 @@ h3 {
   width: 40%;
   margin: 0.3rem;
   text-decoration: none;
-  background-image: url("../images/naushika.jpg");
+  background-image: url("../images/naushika.png");
   color: #000;
   font-size: 14px;
 }
@@ -278,6 +278,50 @@ h3 {
   margin: 0.3rem;
   text-decoration: none;
   background-image: url("../images/totoro.png");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-mononoke {
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/mononoke.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-rapyuta {
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/rapyuta.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-majo {
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/majo.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-kaonashi {
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/kaonashi.PNG");
   color: #000;
   font-size: 14px;
 }

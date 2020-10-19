@@ -79,10 +79,10 @@
                             {{ csrf_field() }}
                             <button class="btn-totoro" type="submit" name="anime" value="totoro">となりのトトロ</button>
                             <button class="btn-naushika" type="submit" name="anime" value="nausika">風の谷のナウシカ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="mononoke">もののけ姫</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="rapyuta">天空の城ラピュタ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="majotaku">魔女の宅急便</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="sentochihiro">千と千尋の神隠し</button>
+                            <button class="btn-mononoke" type="submit" name="anime" value="mononoke">もののけ姫</button>
+                            <button class="btn-rapyuta" type="submit" name="anime" value="rapyuta">天空の城ラピュタ</button>
+                            <button class="btn-majo" type="submit" name="anime" value="majotaku">魔女の宅急便</button>
+                            <button class="btn-kaonashi" type="submit" name="anime" value="sentochihiro">千と千尋の神隠し</button>
                             <button class="btn-totoro" type="submit" name="anime" value="hauru">ハウルの動く城</button>
                             <button class="btn-totoro" type="submit" name="anime" value="ponyo">崖の上のポニョ</button>
                             <button class="btn-totoro" type="submit" name="anime" value="kaze">風立ちぬ</button>
@@ -139,12 +139,12 @@
                 <form action="{{ action('User\UserController@tagsearch') }}" method="get">
                     <ul class="horizontal_scroll">   
                     {{ csrf_field() }}
-                  <button class="btn-flat-dashed-border" type="submit" name="tag" value="mountain">山</button>
-                  <button class="btn-flat-dashed-border" type="submit" name="tag" value="river">川</button>
-                  <button class="btn-flat-dashed-border" type="submit" name="tag" value="sea">海</button>
-                  <button class="btn-flat-dashed-border" type="submit" name="tag" value="city">街</button>
-                  <button class="btn-flat-dashed-border" type="submit" name="tag" value="scenery">景色</button>
-                  <button class="btn-flat-dashed-border" type="submit" name="tag" value="scenery">建物</button>
+                  <button class="btn-mountain" type="submit" name="tag" value="mountain">山</button>
+                  <button class="btn-river" type="submit" name="tag" value="river">川</button>
+                  <button class="btn-sea" type="submit" name="tag" value="sea">海</button>
+                  <button class="btn-city" type="submit" name="tag" value="city">街</button>
+                  <button class="btn-scenery" type="submit" name="tag" value="scenery">景色</button>
+                  <button class="btn-building" type="submit" name="tag" value="scenery">建物</button>
                   
                   
                     
