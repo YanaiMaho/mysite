@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Article;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 
 class UserController extends Controller
@@ -68,7 +69,10 @@ public function create(Request $request)
           $art->image3= null;
       }
       
-      $user = new User;
+     
+      $id=Auth::id();
+      $user=Auth::user();
+      $art->user_id = $id;
       $art->user_name = $user->name;
       
       

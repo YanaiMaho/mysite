@@ -26,6 +26,7 @@ class CreateArticlesTable extends Migration
             $table->string('tag')->nullable();
             $table->string('area');
             $table->string('user_name');
+            $table->String('user_id');
             $table->string('homepage')->nullable();
             
             $table->timestamps();

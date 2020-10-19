@@ -198,24 +198,36 @@
                         <hr>
                         
                         <div class="create-box" >
+                       <ul class="create-image">
+                           <li>
                         <label class="col-md-2">メイン画像</label>
                         
                             <input type="file" class="form-control-file" name="image">
+                            </li>
+                            <li>
                             
-                         <label class="col-md-2">画像1</label>
+                         <label class="col-md-2">サブ画像1</label>
                         
                             <input type="file" class="form-control-file" name="image1">
-                         <label class="col-md-2">画像2</label>
+                            </li>
+                            <li>
+                         <label class="col-md-2">サブ画像2</label>
                         
                             <input type="file" class="form-control-file" name="image2">
-                         <label class="col-md-2">画像3</label>
+                            </li>
+                            <li>
+                         <label class="col-md-2">サブ画像3</label>
                         
                             <input type="file" class="form-control-file" name="image3">
+                            </li>
                             
+                            </ul>
                         </div>
+                        
+                        <hr>
                       
                     {{ csrf_field() }}
-                    <input type="submit" class="btn btn-primary" value="更新">
+                    <input type="submit" class="btn" value="更新">
                 </form>
            </div>
            @endsection
