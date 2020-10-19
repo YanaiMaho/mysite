@@ -27,6 +27,11 @@
                         </div>
                         
                         <div class="create-box" >
+                         <label class="col-md-2">ホームページ</label>
+                         <div class="show_content">{{ $articles_form->homepage }}</div>
+                        </div>
+                        
+                        <div class="create-box" >
                         <label class="col-md-2">関連アニメ</label>
                         <div class="show_content">{{ $articles_form->anime }}</div>
                         </div>

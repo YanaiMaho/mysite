@@ -13,7 +13,13 @@ class UserController extends Controller
 {
     public function index()
   {
-      return view('user.index');
+     $id=1;
+      
+          // 検索されたら検索結果を取得する
+          $posts = Article::where('user_id', $id)->get();
+      
+      return view('user.index', ['posts' => $posts]);
+      
   }
     
     
@@ -91,7 +97,8 @@ public function create(Request $request)
       $art->save();
 
      
-     return view('user.index');
+     return redirect('user/index');
+    
       // admin/news/createにリダイレクトする
      
   }
@@ -100,15 +107,18 @@ public function create(Request $request)
    //投稿を閲覧
    
     
-    public function mypost(Request $request)
+    public function mypost()
   {
+       
+         $id=Auth::id();
+        
       
-         $cond_title = $request->user_name;
+      
       
           // 検索されたら検索結果を取得する
-          $posts = Article::where('user_name', $cond_title)->get();
+          $posts = Article::where('user_id', $id)->get();
       
-      return view('user.post', ['posts' => $posts, 'cond_title' => $cond_title]);
+      return view('user.post', ['posts' => $posts]);
      
   }
    

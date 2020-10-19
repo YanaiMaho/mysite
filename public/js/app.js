@@ -49693,6 +49693,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/b.scss":
+/*!*******************************!*\
+  !*** ./resources/sass/b.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/index.scss":
 /*!***********************************!*\
   !*** ./resources/sass/index.scss ***!
@@ -49716,9 +49727,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/user.scss ./resources/sass/index.scss ./resources/sass/a.scss ***!
-  \********************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/user.scss ./resources/sass/index.scss ./resources/sass/a.scss ./resources/sass/b.scss ***!
+  \********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49726,7 +49737,8 @@ __webpack_require__(/*! /home/ec2-user/environment/mysite/resources/js/app.js */
 __webpack_require__(/*! /home/ec2-user/environment/mysite/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /home/ec2-user/environment/mysite/resources/sass/user.scss */"./resources/sass/user.scss");
 __webpack_require__(/*! /home/ec2-user/environment/mysite/resources/sass/index.scss */"./resources/sass/index.scss");
-module.exports = __webpack_require__(/*! /home/ec2-user/environment/mysite/resources/sass/a.scss */"./resources/sass/a.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysite/resources/sass/a.scss */"./resources/sass/a.scss");
+module.exports = __webpack_require__(/*! /home/ec2-user/environment/mysite/resources/sass/b.scss */"./resources/sass/b.scss");
 
 
 /***/ })

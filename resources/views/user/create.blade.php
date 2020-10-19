@@ -59,7 +59,7 @@
                          <div class="create-box">
                         
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='totoro' {{ old('anime','totoro') == 'totoro' ? 'checked' : '' }}>
+                            <input type="radio" name="anime" value='となりのトトロ' {{ old('anime','となりのトトロ') == 'となりのトトロ' ? 'checked' : '' }}>
                             <label for="となりのトトロ">となりのトトロ</label>
                             </div>
                             <div class="create-radio1">

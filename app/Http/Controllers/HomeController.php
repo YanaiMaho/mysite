@@ -29,6 +29,6 @@ class HomeController extends Controller
     public function backindex()
     {
        
-          return view('user.index');
+          return redirect('user/index');
     }
 }

@@ -296,6 +296,15 @@ h3{
   display: -ms-flexbox;
   display: flex;
   }
+  
+  
+.horizontal_scroll2 {
+  overflow-x: scroll;
+  padding: 0.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  }
 
 
 
@@ -312,6 +321,7 @@ h3{
   
  
 }
+
 
 .btn-totoro{
   display: inline-block;

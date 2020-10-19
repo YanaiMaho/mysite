@@ -15,7 +15,8 @@
                                 <tr>
                                 
                                     <div class=""> 
-                                <img src="{{ $art->image ?? '' }}" width="200" height="200">
+                                    <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">
+                                <img src="{{ $art->image ?? '' }}" width="200" height="200"></a>
                                </div>
                                 <div class="osusume_name">
                                 {{ str_limit($art->name, 100) }}
@@ -23,11 +24,6 @@
                                 </tr>
                                 
                                
-                                <tr>
-                                  <div class="osusume_button">
-                                  
-                                     <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">PUSH</a></a>
-                                </tr>
                                 
                                 </div>
                                 </table>

@@ -25,6 +25,7 @@
         {{-- この章の後半で作成するCSSを読み込みます --}}
         <link href="{{ secure_asset('css/user.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/a.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/b.css') }}" rel="stylesheet">
         
     </head>
   

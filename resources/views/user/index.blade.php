@@ -20,20 +20,40 @@
 
                 
                 
-                
+            <br/><br/>
     
             
-            <div class="indexbox1">
+            
                 <h3>----------おすすめから探す----------</h3>
-            <div class="index-favor">
-                <div class="favor-nav">
-                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+           <div class="box_osusume">
+                    <ul class="horizontal_scroll2">  
+                
+                    
+                            @foreach($posts as $art)
+                            <div class="post_block">
+                                <table>
+                                <tr>
+                                
+                                    <div class=""> 
+                                    <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">
+                                <img src="{{ $art->image ?? '' }}" width="200" height="200">
+                                </a>
+                               </div>
+                                <div class="osusume_name">
+                                {{ str_limit($art->name, 100) }}
+                                </div>
+                                </tr>
+                                
+                               
+                                
+                                
+                                </div>
+                                </table>
+                            </div>
+                            @endforeach
+                      
                 </ul>
-                </div>
-            </div>
+              </div>
             </div>
             
             <div class="indexbox4">

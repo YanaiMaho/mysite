@@ -10222,6 +10222,13 @@ h3 {
   display: flex;
 }
 
+.horizontal_scroll2 {
+  overflow-x: scroll;
+  padding: 0.5rem;
+  display: flex;
+  height: 300px;
+}
+
 .btn-naushika {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;

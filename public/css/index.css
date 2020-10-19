@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 .search-bar {
   width: 15%;
   margin-left: 10px;
@@ -20,7 +20,7 @@
   margin: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  height: 300px;
+  height: 350px;
 }
 
 .osusume {
@@ -30,7 +30,7 @@
 
 .osusume_button {
   display: block;
-  padding: 0.2em;
+ 
   text-align: center;
   position: center;
   margin-left: auto;
