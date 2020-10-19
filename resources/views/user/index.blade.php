@@ -16,9 +16,12 @@
 
 <div class="slider">
 <img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/kokurikozaka036.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/marnie021.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/thumb-ged025.png') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/thumb-karigurashi047.png') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/thumb-kazetachinu024.png') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/thumb-ponyo006.png') }}"  alt="" class="slider-img">
 </div>
 
                 
