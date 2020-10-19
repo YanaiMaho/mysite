@@ -16,22 +16,45 @@
                                            <div class="contents">
                          <h2>- - - - - - - - - - - - - - - - - - - - - -    投稿を編集   - - - - - - - - - - - - - - - - - - - - - -</h2>
                         
+                        
+                         <br/>
+                            <br/>
+                            <label class="col-md-2">名前</label>
                         <div class="create-box" >
-                        <label class="col-md-2">名前</label>
-                        <input type="text" class="form-control" name="name" value="{{ $articles_form->name }}">
+                        
+                        <input type="text" class="form-name" name="name" value="{{ $articles_form->name }}">
                         </div>
-                        
-                        
-                       <div class="create-box" >
-                        <label class="col-md-2">コメント</label>
-                        <textarea class="form-control" name="comment" rows="10">{{ $articles_form->comment }}</textarea>
-                        </div>
-                        
-                        
-                        <div class="create-box" >
+                         <hr>
+                         
+                         
                          <label class="col-md-2">住所</label>
-                         <textarea class="form-control" name="address" rows="3">{{ $articles_form->address }}</textarea>
+                         <div class="create-box" >
+                        
+                         <textarea class="form-address" name="address" rows="3">{{ $articles_form->address}}</textarea>
                         </div>
+                        <hr>
+                        
+                         <label class="col-md-2">ホームページ</label>
+                         <div class="create-box" >
+                        
+                         <textarea class="form-address" name="homepage" rows="3">{{ $articles_form->homepage }}</textarea>
+                        </div>
+                        <hr>
+                        
+                        <label class="col-md-2">コメント</label>
+                       <div class="create-box" >
+                        
+                        <textarea class="form-comment" name="comment" rows="30">{{ $articles_form->comment}}</textarea>
+                        </div>
+                         <hr>
+                        
+                       
+                        
+                        
+                      
+                        
+                        
+                        
                         
                         
                         
