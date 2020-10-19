@@ -10,12 +10,15 @@
     <div class="container">
         <div class="main">
           
-            <div class="cp_cssslider">
-	<div class="cp_slidewrapper">
-		<div class="cp_slide_item"><img src="{{ asset('../images/totoro1.jpg') }}"></div>
-		<div class="cp_slide_item"><img src="{{ asset('/images/header2.jpg') }}"></div>
-		<div class="cp_slide_item"><img src="{{ asset('/images/header3.jpg') }}"></div>
-	</div>
+            
+
+
+
+<div class="slider">
+<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
 </div>
 
                 
