@@ -170,28 +170,28 @@
                         <div class="create-box2" >
                         
                         <div class="create-radio1">
-                            <input type="radio" name="tag" value='mountain' {{ old('tag','mountain') == 'tag' ? 'mountain' : '' }}>
-                            <label for="mountain">山</label>
+                            <input type="radio" name="tag" value='山' {{ old('tag','山') == 'tag' ? '山' : '' }}>
+                            <label for="山">山</label>
                             </div>
                         <div class="create-radio1">
-                            <input type="radio" name="tag" value='river' {{ old('tag','river') == 'tag' ? 'river' : '' }}>
-                            <label for="river">川</label>
+                            <input type="radio" name="tag" value='川' {{ old('tag','川') == 'tag' ? '川' : '' }}>
+                            <label for="川">川</label>
                             </div>
                         <div class="create-radio1">
-                           <input type="radio" name="tag" value='sea' {{ old('tag','sea') == 'tag' ? 'sea' : '' }}>
-                            <label for="sea">海</label>
+                           <input type="radio" name="tag" value='海' {{ old('tag','海') == 'tag' ? '海' : '' }}>
+                            <label for="海">海</label>
                             </div>
                         <div class="create-radio1">
-                            <input type="radio" name="tag" value='city' {{ old('tag','city') == 'tag' ? 'city' : '' }}>
-                            <label for="city">山</label>
+                            <input type="radio" name="tag" value='街' {{ old('tag','街') == 'tag' ? '街' : '' }}>
+                            <label for="街">街</label>
                             </div>
                         <div class="create-radio1">
-                          <input type="radio" name="tag" value='scenery' {{ old('tag','scenery') == 'tag' ? 'scenery' : '' }}>
-                            <label for="scenery">景色</label>
+                          <input type="radio" name="tag" value='景色' {{ old('tag','景色') == 'tag' ? '景色' : '' }}>
+                            <label for="景色">景色</label>
                             </div>
                         <div class="create-radio1">
-                          <input type="radio" name="tag" value='building' {{ old('tag','building') == 'tag' ? 'building' : '' }}>
-                            <label for="scenery">建物</label>
+                          <input type="radio" name="tag" value='建物' {{ old('tag','建物') == 'tag' ? '建物' : '' }}>
+                            <label for="建物">建物</label>
                             </div>
                         </div>
                         
