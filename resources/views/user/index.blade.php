@@ -17,11 +17,11 @@
 <div class="slider">
 <img src="{{ asset('../images/chihiro043.jpg') }}"  alt="" class="slider-img">
 <img src="{{ asset('../images/kokurikozaka036.jpg') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/marnie021.jpg') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/thumb-ged025.png') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/thumb-karigurashi047.png') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/thumb-kazetachinu024.png') }}"  alt="" class="slider-img">
-<img src="{{ asset('../images/thumb-ponyo006.png') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/marnie035.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/ged025.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/karigurashi047.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/kazetachinu024.jpg') }}"  alt="" class="slider-img">
+<img src="{{ asset('../images/ponyo006.jpg') }}"  alt="" class="slider-img">
 </div>
 
                 
@@ -83,24 +83,24 @@
            
                     <ul class="horizontal_scroll">   
                             {{ csrf_field() }}
-                            <button class="btn-totoro" type="submit" name="anime" value="totoro">となりのトトロ</button>
-                            <button class="btn-naushika" type="submit" name="anime" value="nausika">風の谷のナウシカ</button>
-                            <button class="btn-mononoke" type="submit" name="anime" value="mononoke">もののけ姫</button>
-                            <button class="btn-rapyuta" type="submit" name="anime" value="rapyuta">天空の城ラピュタ</button>
-                            <button class="btn-majo" type="submit" name="anime" value="majotaku">魔女の宅急便</button>
-                            <button class="btn-kaonashi" type="submit" name="anime" value="sentochihiro">千と千尋の神隠し</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="hauru">ハウルの動く城</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="ponyo">崖の上のポニョ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="kaze">風立ちぬ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="gedo">ゲド戦記</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="ma-ni-">思い出のマーニー</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="kokuriko">コクリコ坂から</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="rupan">カリオストロの城</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="kurenai">紅の豚</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="mimi">耳を澄ませば</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="neko">猫の恩返し</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="ariettely">借りぐらしのアリエッティ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="otheranime">その他のアニメ</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="となりのトトロ">となりのトトロ</button>
+                            <button class="btn-naushika" type="submit" name="anime" value="風の谷のナウシカ">風の谷のナウシカ</button>
+                            <button class="btn-mononoke" type="submit" name="anime" value="もののけ姫">もののけ姫</button>
+                            <button class="btn-rapyuta" type="submit" name="anime" value="天空の城ラピュタ">天空の城ラピュタ</button>
+                            <button class="btn-majo" type="submit" name="anime" value="魔女の宅急">魔女の宅急便</button>
+                            <button class="btn-kaonashi" type="submit" name="anime" value="千と千尋の神隠し">千と千尋の神隠し</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="ハウルの動く城">ハウルの動く城</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="崖の上のポニョ">崖の上のポニョ</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="風立ちぬ">風立ちぬ</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="ゲド戦記">ゲド戦記</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="思い出のマーニー">思い出のマーニー</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="コクリコ坂から">コクリコ坂から</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="カリオストロの城">カリオストロの城</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="紅の豚">紅の豚</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="耳を澄ませば">耳を澄ませば</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="猫の恩返し">猫の恩返し</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="借りぐらしのアリエッティ">借りぐらしのアリエッティ</button>
+                            <button class="btn-totoro" type="submit" name="anime" value="その他のアニメ">その他のアニメ</button>
                 </ul>
                   </form>
                  
@@ -123,17 +123,17 @@
            
                        
                             {{ csrf_field() }}
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="hokkaido">北海道</button>
-                            <button class="btn-circle-stitch3" type="submit" name="area" value="tohoku">東北</button>
-                            <button class="btn-circle-stitch4" type="submit" name="area" value="hokuriku">北陸</button>
-                            <button class="btn-circle-stitch3" type="submit" name="area" value="koushinetsu">甲信越</button>
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="kantou">関東</button>
-                            <button class="btn-circle-stitch3" type="submit" name="area" value="toukai">東海</button>
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="kansai">関西</button>
-                            <button class="btn-circle-stitch3" type="submit" name="area" value="sikoku">四国</button>
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="chugoku">中国</button>
-                            <button class="btn-circle-stitch4" type="submit" name="area" value="kyushu">九州</button>
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="okinawa">沖縄</button>
+                            <button class="btn-circle-stitch2" type="submit" name="area" value="北海道">北海道</button>
+                            <button class="btn-circle-stitch3" type="submit" name="area" value="東北">東北</button>
+                            <button class="btn-circle-stitch4" type="submit" name="area" value="北陸">北陸</button>
+                            <button class="btn-circle-stitch3" type="submit" name="area" value="甲信越">甲信越</button>
+                            <button class="btn-circle-stitch2" type="submit" name="area" value="関東">関東</button>
+                            <button class="btn-circle-stitch3" type="submit" name="area" value="東海">東海</button>
+                            <button class="btn-circle-stitch2" type="submit" name="area" value="関西">関西</button>
+                            <button class="btn-circle-stitch3" type="submit" name="area" value="四国">四国</button>
+                            <button class="btn-circle-stitch2" type="submit" name="area" value="中国">中国</button>
+                            <button class="btn-circle-stitch4" type="submit" name="area" value="九州">九州</button>
+                            <button class="btn-circle-stitch2" type="submit" name="area" value="沖縄">沖縄</button>
                   </form>
                     
               </div>
@@ -145,12 +145,12 @@
                 <form action="{{ action('User\UserController@tagsearch') }}" method="get">
                     <ul class="horizontal_scroll">   
                     {{ csrf_field() }}
-                  <button class="btn-mountain" type="submit" name="tag" value="mountain">山</button>
-                  <button class="btn-river" type="submit" name="tag" value="river">川</button>
-                  <button class="btn-sea" type="submit" name="tag" value="sea">海</button>
-                  <button class="btn-city" type="submit" name="tag" value="city">街</button>
-                  <button class="btn-scenery" type="submit" name="tag" value="scenery">景色</button>
-                  <button class="btn-building" type="submit" name="tag" value="scenery">建物</button>
+                  <button class="btn-mountain" type="submit" name="tag" value="山">山</button>
+                  <button class="btn-river" type="submit" name="tag" value="川">川</button>
+                  <button class="btn-sea" type="submit" name="tag" value="海">海</button>
+                  <button class="btn-city" type="submit" name="tag" value="街">街</button>
+                  <button class="btn-scenery" type="submit" name="tag" value="景色">景色</button>
+                  <button class="btn-building" type="submit" name="tag" value="建物">建物</button>
                   
                   
                     
