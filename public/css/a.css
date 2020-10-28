@@ -9,6 +9,7 @@ hr {
 
 .col-md-2 {
   margin-left: 5em;
+  text-align: center;
 }
 
 .create-box {
@@ -22,6 +23,21 @@ hr {
   margin-right: 5em;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.create-box3 {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 1em;
+  width: 30%;
+  min-width: 200px;
+  float: left;
+}
+
+.create-box3 li {
+  text-align: center;
+  list-style: none;
+  margin-top: 1em;
 }
 
 .create-radio1 {

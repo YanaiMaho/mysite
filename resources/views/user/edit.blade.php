@@ -209,47 +209,83 @@
                         <hr>
                         
                         
-                         <div class="create-box" >
+                         <div class="create-box3" >
                         <label class="col-md-2">メイン画像</label>
-                        <input type="file" class="form-control-file" name="image">
-                        設定中: {{ $articles_form->image}}
-                        <label class="form-check-label">
+                        <br>
+                        <ul>
+                        <li class="create-box3-li">
+                            
+                        <img src="{{ $art->image ?? '' }}" width="200" height="200">
+                        </li>
+                        
+                         <li class="create-box3-li"><input type="file" class="form-control-file" name="image"></li>
+                        <li class="create-box3-li"><label class="form-check-label">
                                     <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
-                                </label>
+                                </label></li>
+                        </ul>
                         </div>
                         
                        
-                                    
-                                
-                       <div class="create-box" >
+                         <div class="create-box3" >
                         <label class="col-md-2">画像1</label>
-                        <input type="file" class="form-control-file" name="image1">
-                        設定中: {{ $articles_form->image1}}
-                        <label class="form-check-label">
+                        <br>
+                        <ul>
+                        <li class="create-box3-li">
+                            
+                        <img src="{{ $art->image1 ?? '' }}" width="200" height="200">
+                        </li>
+                        
+                         <li class="create-box3-li"><input type="file" class="form-control-file" name="image1"></li>
+                        <li class="create-box3-li"><label class="form-check-label">
                                     <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
-                                </label>
+                                </label></li>
+                        </ul>
                         </div>
                         
                         
-                        <div class="create-box" >
+                        <div class="create-box3" >
                         <label class="col-md-2">画像2</label>
-                        <input type="file" class="form-control-file" name="image2">
-                        設定中: {{ $articles_form->image2}}
-                        <label class="form-check-label">
+                        <br>
+                        <ul>
+                        <li class="create-box3-li">
+                            
+                        <img src="{{ $art->image2 ?? '' }}" width="200" height="200">
+                        </li>
+                        
+                         <li class="create-box3-li"><input type="file" class="form-control-file" name="image2"></li>
+                        <li class="create-box3-li"><label class="form-check-label">
                                     <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
-                                </label>
+                                </label></li>
+                        </ul>
                         </div>
+                        
+                        
+                        <div class="create-box3" >
+                        <label class="col-md-2">画像3</label>
+                        <br>
+                        <ul>
+                        <li class="create-box3-li">
+                            
+                        <img src="{{ $art->image3 ?? '' }}" width="200" height="200">
+                        </li>
+                        
+                         <li class="create-box3-li"><input type="file" class="form-control-file" name="image3"></li>
+                        <li class="create-box3-li"><label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
+                                </label></li>
+                        </ul>
+                        </div>
+                        
+                        <hr>
+                                
+                       
+                        
+                        
+                        
                             
                         
                         
-                        <div class="create-box" >
-                        <label class="col-md-2">画像3</label>
-                        <input type="file" class="form-control-file" name="image3">
-                        設定中: {{ $articles_form->image3}}
-                        <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
-                                </label>
-                        </div>
+                        
                            
                             
                          
