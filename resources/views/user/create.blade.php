@@ -141,28 +141,58 @@
                          
                          
                             <div class="create-radio1">
-                         <input type="radio" name="area" value='hokkaido' {{ old('area','hokkaido') == 'area' ? 'hokkaido' : '' }}>
-                            <label for="hokkaido">北海道</label>
+                         <input type="radio" name="area" value='北海道' {{ old('area','北海道') == 'area' ? '北海道' : '' }}>
+                            <label for="北海道">北海道</label>
                             </div>
                             
                             <div class="create-radio1">
-                        <input type="radio" name="area" value='tohoku' {{ old('area','tohoku') == 'area' ? 'tohoku' : '' }}>
-                            <label for="tohoku">東北</label>
+                        <input type="radio" name="area" value='東北' {{ old('area','東北') == 'area' ? '東北' : '' }}>
+                            <label for="東北">東北</label>
                             </div>
                             
                             <div class="create-radio1">
-                        <input type="radio" name="area" value='hokuriku' {{ old('area','hokuriku') == 'area' ? 'hokuriku' : '' }}>
-                            <label for="hokuriku">北陸</label>
+                        <input type="radio" name="area" value='北陸' {{ old('area','北陸') == 'area' ? '北陸' : '' }}>
+                            <label for="北陸">北陸</label>
                             </div>
                             
                             <div class="create-radio1">
-                        <input type="radio" name="area" value='koushinetsu' {{ old('area','koushinetsu') == 'area' ? 'koushinetsu' : '' }}>
-                            <label for="koushinetsu">甲信越</label>
+                        <input type="radio" name="area" value='甲信越' {{ old('area','甲信越') == 'area' ? '甲信越' : '' }}>
+                            <label for="甲信越">甲信越</label>
                             </div>
                             
                             <div class="create-radio1">
-                        <input type="radio" name="area" value='kantou' {{ old('area','kantou') == 'area' ? 'kantou' : '' }}>
-                            <label for="kantou">関東</label>
+                        <input type="radio" name="area" value='関東' {{ old('area','関東') == 'area' ? '関東' : '' }}>
+                            <label for="関東">関東</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='東' {{ old('area','東') == 'area' ? '東' : '' }}>
+                            <label for="東">東海</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='関西' {{ old('area','関西') == 'area' ? '関西' : '' }}>
+                            <label for="関西">関西</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='四国' {{ old('area','四国') == 'area' ? '四国' : '' }}>
+                            <label for="四国">四国</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='中国' {{ old('area','中国') == 'area' ? '中国' : '' }}>
+                            <label for="中国">中国</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='九州' {{ old('area','九州') == 'area' ? '九州' : '' }}>
+                            <label for="九州">九州</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='沖縄' {{ old('area','沖縄') == 'area' ? '沖縄' : '' }}>
+                            <label for="沖縄"></label>
                             </div>
                         
                         </div>
