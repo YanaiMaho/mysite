@@ -192,7 +192,7 @@
                             
                             <div class="create-radio1">
                         <input type="radio" name="area" value='沖縄' {{ old('area','沖縄') == 'area' ? '沖縄' : '' }}>
-                            <label for="沖縄"></label>
+                            <label for="沖縄">沖縄</label>
                             </div>
                         
                         </div>

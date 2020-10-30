@@ -27,6 +27,13 @@
                 
                 
             <br/><br/>
+            
+        <div class="title-box"><p class="title-p">ジブリ作品のモデルになった場所</p>
+             <p class="title-p">ジブリに出てきそうな場所</p>
+             <p class="title-p">検索・投稿サイトです</p>
+        </div>
+        
+        <br/><br/>
     
             
             
