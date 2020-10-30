@@ -71,60 +71,64 @@
                             <label for="mononoke">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='天空の城ラピュタ' {{ old('anime','天空の城ラピュタ') == '天空の城ラピュタ' ? 'checked' : '' }}>
+                            <label for="天空の城ラピュタ">天空の城ラピュタ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='魔女の宅急' {{ old('anime','魔女の宅急') == '魔女の宅急' ? 'checked' : '' }}>
+                            <label for="魔女の宅急">魔女の宅急便</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='totoro' {{ old('anime','totoro') == 'totoro' ? 'checked' : '' }}>
-                            <label for="となりのトトロ">となりのトトロ</label>
+                            <input type="radio" name="anime" value='千と千尋の神隠し' {{ old('anime','千と千尋の神隠し') == '千と千尋の神隠し' ? 'checked' : '' }}>
+                            <label for="千と千尋の神隠し">千と千尋の神隠し</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='nausika' {{ old('anime','nausika') == 'nausika' ? 'checked' : '' }}>
-                            <label for="nausika">風の谷のナウシカ</label>
+                            <input type="radio" name="anime" value='ハウルの動く城' {{ old('anime','ハウルの動く城') == 'ハウルの動く城' ? 'checked' : '' }}>
+                            <label for="ハウルの動く城">ハウルの動く城</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='崖の上のポニョ' {{ old('anime','崖の上のポニョ') == '崖の上のポニョ' ? 'checked' : '' }}>
+                            <label for="崖の上のポニョ">崖の上のポニョ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="風立ちぬ" value='風立ちぬ' {{ old('anime','風立ちぬ') == '風立ちぬ' ? 'checked' : '' }}>
+                            <label for="風立ちぬ">風立ちぬ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='ゲド戦記' {{ old('anime','ゲド戦記') == 'ゲド戦記' ? 'checked' : '' }}>
+                            <label for="ゲド戦記">ゲド戦記</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='totoro' {{ old('anime','totoro') == 'totoro' ? 'checked' : '' }}>
-                            <label for="となりのトトロ">となりのトトロ</label>
+                            <input type="radio" name="anime" value='思い出のマーニー' {{ old('anime','思い出のマーニー') == '思い出のマーニー' ? 'checked' : '' }}>
+                            <label for="思い出のマーニー">思い出のマーニー</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='nausika' {{ old('anime','nausika') == 'nausika' ? 'checked' : '' }}>
-                            <label for="nausika">風の谷のナウシカ</label>
+                            <input type="radio" name="anime" value='コクリコ坂から' {{ old('anime','コクリコ坂から') == 'コクリコ坂から' ? 'checked' : '' }}>
+                            <label for="コクリコ坂から">コクリコ坂から</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='カリオストロの城' {{ old('anime','カリオストロの城') == 'カリオストロの城' ? 'checked' : '' }}>
+                            <label for="カリオストロの城">カリオストロの城</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='紅の豚' {{ old('anime','紅の豚') == '紅の豚' ? 'checked' : '' }}>
+                            <label for="紅の豚">紅の豚</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='耳を澄ませば' {{ old('anime','耳を澄ませば') == '耳を澄ませば' ? 'checked' : '' }}>
+                            <label for="耳を澄ませば">耳を澄ませば</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='猫の恩返し' {{ old('anime','猫の恩返し') == '猫の恩返し' ? 'checked' : '' }}>
+                            <label for="猫の恩返し">猫の恩返し</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='借りぐらしのアリエッティ' {{ old('anime','借りぐらしのアリエッティ') == '借りぐらしのアリエッティ' ? 'checked' : '' }}>
+                            <label for="借りぐらしのアリエッティ">借りぐらしのアリエッティ</label>
+                            </div>
+                            <div class="create-radio1">
+                            <input type="radio" name="anime" value='その他のアニメ' {{ old('anime','その他のアニメ') == 'その他のアニメ' ? 'checked' : '' }}>
+                            <label for="その他のアニメ">その他のアニメ</label>
                             </div>
                             
                             
