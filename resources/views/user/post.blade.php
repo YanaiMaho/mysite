@@ -6,16 +6,19 @@
        
        
        <br/>  <br/>  <br/>  <br/> 
-            <h2>- - - - - - - - - - - - - - - - - - - - - -    My投稿   - - - - - - - - - - - - - - - - - - - - - -</h2>
+            <h2>投稿</h2>
+            <hr>
         <br/> 
              <div class="mypost">
                             @foreach($posts as $art)
                             <div class="post_block">
                                 
                                 
-                                <div class=""> 
-                                <img src="{{ $art->image ?? '' }}" width="200" height="200">
-                               </div>
+                                
+                               
+                               
+                                <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}"><img src="{{ $art->image ?? '' }}" width="200" height="200"></a>
+                                
                                
                                
                                <div class="post_name">
@@ -23,9 +26,7 @@
                                     
                                 </div>
                                
-                                <div class="post_click">
-                                <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">投稿へ</a>
-                                </div>
+                                
                                
                                
                 
@@ -36,7 +37,7 @@
                                             <a href="{{ action('User\UserController@edit', ['id' => $art->id]) }}">編集</a>
                                         </div>
                                        
-                                        <div class="mypost_button2">
+                                        <div class="mypost_button1">
                                             <a href="{{action('User\UserController@delete',['id' => $art->id])}}">消去</a>
                                         </div>
                                     
@@ -45,6 +46,7 @@
                             </div>
                             @endforeach
                        </div>
+                      
                 </div>
     
 @endsection

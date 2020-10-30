@@ -10154,7 +10154,7 @@ h3 {
 .post_name {
   display: block;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   color: #000;
 }
 
@@ -10178,17 +10178,14 @@ h3 {
 }
 
 .mypost_button1 {
-  display: block;
+  float: left;
   padding: 0.2em;
-  text-align: center;
-  position: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #add8e6;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  border-radius: 20px;
+  border-radius: 5px;
   width: 40%;
+  margin-left: 0.5em;
   margin-top: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 .mypost_button1 a {
