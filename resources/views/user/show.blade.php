@@ -12,10 +12,18 @@
                        <h3>{{ $articles_form->name }}</h3>
             
             <br/>
-            <img src="{{ $articles_form->image ?? '' }}" width="300" height="300">
-         <img src="{{ $articles_form->image1 }}">
-         <img src="{{ $articles_form->image2 }}">
-         <img src="{{ $articles_form->image3 }}">
+
+            <p class="show-p">
+            <a href="gazou1.jpg" data-lightbox="group" ><img src="{{ $articles_form->image ?? '' }}" class="show-image"></a>
+            </p>
+            <br>
+            <p class="show-p">
+            <a href="gazou1.jpg" data-lightbox="group"><img src="{{ $articles_form->image1 ?? '' }}" class="show-subimage"></a>
+            <a href="gazou1.jpg" data-lightbox="group"><img src="{{ $articles_form->image3 ?? '' }}" class="show-subimage"></a>
+            <a href="gazou1.jpg" data-lightbox="group"><img src="{{ $articles_form->image3 ?? '' }}" class="show-subimage"></a>
+             </p>
+             <br>
+    
  
                       <table border="" class="show-table">
                         <tr class="tr1">
@@ -72,6 +80,12 @@
                         
                       
                         </table>
+                        
+                        
+                        <br><br><br>
+                        <div>
+                        <img src="/images/footer.PNG" class="footer-image">
+                        </div>
                         
   
         

@@ -56,3 +56,23 @@ img {
   text-align: center;
   padding: 3em;
 }
+
+.show-p {
+  text-align: center;
+}
+
+.show-image {
+  width: 600px;
+  height: 400px;
+}
+
+.show-subimage {
+  margin: 1em;
+  width: 240px;
+  height: 160px;
+}
+
+.footer-image {
+  width: 100%;
+  height: 25%;
+}
