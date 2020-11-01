@@ -22,7 +22,9 @@
                            <h2>投稿する</h2>
     
                             <br/>
+                            <hr>
                             <br/>
+                            
                             <label class="col-md-2">名前</label>
                         <div class="create-box" >
                         

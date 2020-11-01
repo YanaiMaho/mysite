@@ -5,49 +5,75 @@
     <div class="container">
        
        
-       <br/>  <br/>  <br/>  <br/> 
+       <br/>  <br/>  <br/>   
+       
+       
+       
+                       <h3>{{ $articles_form->name }}</h3>
             
-            
+            <br/>
             <img src="{{ $articles_form->image ?? '' }}" width="300" height="300">
          <img src="{{ $articles_form->image1 }}">
          <img src="{{ $articles_form->image2 }}">
          <img src="{{ $articles_form->image3 }}">
  
-        
-                       <h3>{{ $articles_form->name }}</h3>
+                      <table border="" class="show-table">
+                        <tr class="tr1">
+                       <td>
+                        名称
+                       </td>
+                       <td class="td-content">
+                       {{ $articles_form->name }}
+                       </td>
+                       </tr>
+                       
+                       <tr class="tr2">
+                       <td>
+                       コメント
+                        </td>
+                        <td class="td-content">
+                        {{ $articles_form->comment }}
+                       </td>
+                       </tr>
                       
-                        <div class="create-box" >
-                         <label class="col-md-2">住所</label>
-                         <div class="show_content">{{ $articles_form->address }}</div>
-                        </div>
+                      
+                        <tr class="tr3">
+                         <td>
+                         住所
+                         </td>
+                         <td class="td-content">
+                        {{ $articles_form->address }}
+                         </td>
+                        </tr>
                         
-                       <div class="create-box" >
-                        <label class="col-md-2">コメント</label>
-                        <div class="show_content">{{ $articles_form->comment }}</div>
-                        </div>
+                       
+                        <tr class="tr1">
+                       
+                        <td>ホームページ</td>
+                         <td class="td-content">{{ $articles_form->homepage }}</td>
+                
+                        </tr>
                         
-                        <div class="create-box" >
-                         <label class="col-md-2">ホームページ</label>
-                         <div class="show_content">{{ $articles_form->homepage }}</div>
-                        </div>
+                       <tr class="tr1">
+                        <td>関連アニメ</td>
+                        <td class="td-content">{{ $articles_form->anime }}</td>
+                        </tr>
                         
-                        <div class="create-box" >
-                        <label class="col-md-2">関連アニメ</label>
-                        <div class="show_content">{{ $articles_form->anime }}</div>
-                        </div>
+                        <tr class="tr1">
+                        <td>タグ</td>
+                        <td class="td-content">{{ $articles_form->tag}}</td>
+                        </tr>
                         
-                        <div class="create-box" >
-                        <label class="col-md-2">タグ</label>
-                        <div class="show_content">{{ $articles_form->tag}}</div>
-                        </div>
-                        
-                         <div class="create-box" >
-                        <label class="col-md-2">投稿者</label>
-                        <div class="show_content">{{ $articles_form->user_name}}</div>
-                        </div>
+                         <tr class="tr1">
+                        <td>投稿者</td>
+                        <td class="td-content">{{ $articles_form->user_name}}</td>
+                        </tr>
                         
                         
+                      
+                        </table>
                         
+  
         
          
              

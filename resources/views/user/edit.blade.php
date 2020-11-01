@@ -14,10 +14,13 @@
                     
                     
                                            <div class="contents">
-                         <h2>- - - - - - - - - - - - - - - - - - - - - -    投稿を編集   - - - - - - - - - - - - - - - - - - - - - -</h2>
+                                               <br>
+                                               
+                                               <h2>投稿を編集</h2>
+                               <hr>
                         
                         
-                         <br/>
+                         
                             <br/>
                             <label class="col-md-2">名前</label>
                         <div class="create-box" >

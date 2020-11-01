@@ -28,7 +28,9 @@
                 
             <br/><br/>
             
-        <div class="title-box"><p class="title-p">ジブリ作品のモデルになった場所</p>
+        <div class="title-box">
+            <p class="title-p">本サイト　GhibliWhere　は</p>
+            <p class="title-p">ジブリ作品のモデルになった場所</p>
              <p class="title-p">ジブリに出てきそうな場所の</p>
              <p class="title-p">検索・投稿サイトです</p>
         </div>
@@ -37,7 +39,7 @@
     
             
             
-                <h3>----------おすすめから探す----------</h3>
+                <h3>- - - - - - - - - - おすすめから探す - - - - - - - - - -</h3>
            <div class="box_osusume">
                     <ul class="horizontal_scroll2">  
                 
@@ -82,7 +84,7 @@
             
             
             <div class="indexbox3">
-            <h3>----------作品から探す----------</h3>
+            <h3>- - - - - - - - - - 作品から探す - - - - - - - - - -</h3>
             <div class="indexbox3_a">
                    
                    <form action="{{ action('User\UserController@animesearch') }}" method="get">
@@ -122,7 +124,7 @@
             
             
             <div class="indexbox3">
-            <h3>----------地域から探す----------</h3>
+            <h3>- - - - - - - - - - 地域から探す - - - - - - - - - -</h3>
             <div class="indexbox4">
            
            <form action="{{ action('User\UserController@areasearch') }}" method="get">
@@ -130,24 +132,24 @@
            
                        
                             {{ csrf_field() }}
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="北海道">北海道</button>
+                            <button class="btn-circle-stitch4" type="submit" name="area" value="北海道">北海道</button>
                             <button class="btn-circle-stitch3" type="submit" name="area" value="東北">東北</button>
-                            <button class="btn-circle-stitch4" type="submit" name="area" value="北陸">北陸</button>
-                            <button class="btn-circle-stitch3" type="submit" name="area" value="甲信越">甲信越</button>
+                            <button class="btn-circle-stitch3" type="submit" name="area" value="北陸">北陸</button>
+                            <button class="btn-circle-stitch4" type="submit" name="area" value="甲信越">甲信越</button>
                             <button class="btn-circle-stitch2" type="submit" name="area" value="関東">関東</button>
                             <button class="btn-circle-stitch3" type="submit" name="area" value="東海">東海</button>
                             <button class="btn-circle-stitch2" type="submit" name="area" value="関西">関西</button>
                             <button class="btn-circle-stitch3" type="submit" name="area" value="四国">四国</button>
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="中国">中国</button>
-                            <button class="btn-circle-stitch4" type="submit" name="area" value="九州">九州</button>
-                            <button class="btn-circle-stitch2" type="submit" name="area" value="沖縄">沖縄</button>
+                            <button class="btn-circle-stitch3" type="submit" name="area" value="中国">中国</button>
+                            <button class="btn-circle-stitch2" type="submit" name="area" value="九州">九州</button>
+                            <button class="btn-circle-stitch4" type="submit" name="area" value="沖縄">沖縄</button>
                   </form>
                     
               </div>
             </div>
             
              <div class="indexbox3">
-            <h3>----------その他のタグから探す----------</h3>
+            <h3>- - - - - - - - - - その他のタグから探す - - - - - - - - - -</h3>
             <div class="indexbox3_a">
                 <form action="{{ action('User\UserController@tagsearch') }}" method="get">
                     <ul class="horizontal_scroll">   

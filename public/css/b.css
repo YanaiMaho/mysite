@@ -16,3 +16,43 @@ img {
   text-align: center;
   font-size: 20px;
 }
+
+.title-name {
+  text-align: center;
+  font-size: 25px;
+  border: solid #BBBBBB;
+}
+
+.show-table {
+  width: 80%;
+  margin: 3em auto;
+}
+
+.tr1 {
+  background-color: #BBBBBB;
+  height: 3em;
+  border: solid #BBBBBB;
+}
+
+.tr2 {
+  background-color: #BBBBBB;
+  height: 15em;
+  border: solid #BBBBBB;
+}
+
+.tr3 {
+  background-color: #BBBBBB;
+  height: 4em;
+  border: none;
+}
+
+.show-table td {
+  text-align: center;
+  border: solid #BBBBBB;
+}
+
+.td-content {
+  background-color: #fff;
+  text-align: center;
+  padding: 3em;
+}
