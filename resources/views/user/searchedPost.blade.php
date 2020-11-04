@@ -6,7 +6,8 @@
        
        
        <br/>  <br/>  <br/>  <br/> 
-            <h2>-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -    検索結果   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -</h2>
+            <h3>検索結果</h3>
+            <hr>
         <br/> 
              <div class="mypost">
                             @foreach($posts as $art)
@@ -31,5 +32,9 @@
                             @endforeach
                        </div>
                 </div>
+                
+                <div>
+                        <img src="/images/footer.PNG" class="footer-image">
+                        </div>
     
 @endsection

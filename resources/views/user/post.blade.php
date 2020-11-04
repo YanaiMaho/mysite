@@ -46,7 +46,9 @@
                             </div>
                             @endforeach
                        </div>
-                      
+                      <div>
+                        <img src="/images/footer.PNG" class="footer-image">
+                        </div>
                 </div>
     
 @endsection

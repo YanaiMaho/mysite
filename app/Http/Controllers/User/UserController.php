@@ -286,7 +286,7 @@ public function create(Request $request)
     }
     //mapで検索
     public function mapsearch(){
-        
+        return view('user.map');
     }
     
     

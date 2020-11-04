@@ -31,6 +31,7 @@ Route::group(['prefix' => 'user'], function() {
       Route::get('animesearch', 'User\UserController@animesearch');
       Route::get('areasearch', 'User\UserController@areasearch');
       Route::get('tagsearch', 'User\UserController@tagsearch');
+      Route::get('mapsearch', 'User\UserController@mapsearch');
 });
 Auth::routes();
 

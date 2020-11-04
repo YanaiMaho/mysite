@@ -73,6 +73,8 @@ img {
 }
 
 .footer-image {
-  width: 100%;
-  height: 25%;
+  width: 30%;
+  height: 10%;
+  margin-left: 75%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 }

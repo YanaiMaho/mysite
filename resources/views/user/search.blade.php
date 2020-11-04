@@ -25,5 +25,8 @@
                             @endforeach
                        </div>
         
-     </div>                   
+     </div>  
+     <div>
+                        <img src="/images/footer.PNG" class="footer-image">
+                        </div>
 @endsection

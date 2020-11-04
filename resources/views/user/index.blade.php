@@ -33,6 +33,9 @@
             <p class="title-p">ジブリ作品のモデルになった場所</p>
              <p class="title-p">ジブリに出てきそうな場所の</p>
              <p class="title-p">検索・投稿サイトです</p>
+             <br>
+             <br>
+             <p class="title-p">＊投稿する方はアカウント登録をお願いします＊</p>
         </div>
         
         <br/><br/>
@@ -72,7 +75,7 @@
             </div>
             
             <div class="indexbox4">
-                    <a href="news.html" class="btn-cross">-mapから探す</a>
+                    <a href="mapsearch" class="btn-cross">-mapから探す</a>
                
                     <a href="imagesearch" class="btn-cross">写真から探す</a>
                 </div>

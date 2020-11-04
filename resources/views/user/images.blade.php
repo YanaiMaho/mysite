@@ -8,7 +8,7 @@
         <br>
         <br>
         <br>
-        <h2>画像から検索</h2>
+        <h3>画像から検索</h3>
     <hr>    
            
            
@@ -23,7 +23,7 @@
                                     </a>
                                 </li>
                                 
-                                @if( $art->image2  != null)
+                                @if( $art->image1  != null)
                                 <li>
                                     <img src="{{ $art->image1 }}" class="img">
                                 </li>
@@ -44,7 +44,9 @@
                         </ul>
                    
                 </div>
-                
+                <div>
+                        <img src="/images/footer.PNG" class="footer-image">
+                        </div>
                 <br><br>
     
 @endsection
