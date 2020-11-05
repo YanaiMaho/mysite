@@ -1,8 +1,4 @@
-@extends('layouts.user')
-@section('title', 'ghibliwhere ジブリスポット検索・投稿サイト')
 
-@section('content')
-  
                         
   
         
@@ -238,7 +234,40 @@
                         </table>
                         
                         
-                        <br><br><br>
+                        <br><br>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmvcMTyhzgcWPqN4Qnx_b8NUvSeagLhdc&callback=initMap" async></script>
+<script type="text/javascript">
+  var map;
+  var marker;
+  var geocoder;
+  function initMap() {
+    geocoder = new google.maps.Geocoder();
+    geocoder.geocode({
+    'address': '{{ $articles_form->address }}' //住所
+    }, function(results, status) { 
+      if (status === google.maps.GeocoderStatus.OK) {
+      map = new google.maps.Map(document.getElementById('gmap'), {
+        center: results[0].geometry.location,
+        zoom: 17 //ズーム
+     });
+    marker = new google.maps.Marker({
+    position: results[0].geometry.location,
+    map: map
+    });
+    infoWindow = new google.maps.InfoWindow({
+    content: '{{ $articles_form->name }}'
+    });
+    marker.addListener('click', function() {
+      infoWindow.open(map, marker); 
+    });
+    } else { 
+      alert(status);
+    }
+  });
+}
+</script>
+<div id="gmap"></div>
+                        <br>
                         <div>
                         <img src="/images/footer.PNG" class="footer-image">
                         </div>
