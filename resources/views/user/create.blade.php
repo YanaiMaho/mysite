@@ -93,9 +93,10 @@
                             <label for="崖の上のポニョ">崖の上のポニョ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="風立ちぬ" value='風立ちぬ' {{ old('anime','風立ちぬ') == '風立ちぬ' ? 'checked' : '' }}>
+                            <input type="radio" name="anime" value='風立ちぬ' {{ old('anime','風立ちぬ') == '風立ちぬ' ? 'checked' : '' }}>
                             <label for="風立ちぬ">風立ちぬ</label>
                             </div>
+                            
                             <div class="create-radio1">
                             <input type="radio" name="anime" value='ゲド戦記' {{ old('anime','ゲド戦記') == 'ゲド戦記' ? 'checked' : '' }}>
                             <label for="ゲド戦記">ゲド戦記</label>

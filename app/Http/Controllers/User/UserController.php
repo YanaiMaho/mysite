@@ -286,7 +286,13 @@ public function create(Request $request)
     }
     //mapで検索
     public function mapsearch(){
-        return view('user.map');
+      
+      
+          // それ以外はすべてのニュースを取得する
+          $posts = Article::all();
+      
+      return view('user.map', ['posts' => $posts]);
+        
     }
     
     
