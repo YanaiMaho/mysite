@@ -34,7 +34,7 @@
               map: map
             });
             infoWindow_{{ $i }} = new google.maps.InfoWindow({
-              content: '<h4>{{ $art->name }}</h4><img src="{{ $art->image }}" class="img">'
+              content: '<h4>{{ $art->name }}</h4><a href="{{ action('User\UserController@show', ['id' => $art->id]) }}"><img src="{{ $art->image }}" class="img"></a>'
             });
              
             marker_{{ $i }}.addListener('click', function () {
