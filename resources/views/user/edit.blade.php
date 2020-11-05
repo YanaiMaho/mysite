@@ -47,7 +47,7 @@
                         <label class="col-md-2">コメント</label>
                        <div class="create-box" >
                         
-                        <textarea class="form-comment" name="comment" rows="30">{{ $articles_form->comment}}</textarea>
+                        <textarea class="form-comment" name="comment" rows="30" col="100">{{ $articles_form->comment}}</textarea>
                         </div>
                          <hr>
                         

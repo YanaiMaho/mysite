@@ -66,9 +66,7 @@
 
        <header class="header-4">
   <div class="header-inner">
-    <div class="logo">
-      <h1>GhibliWhere</h1>
-    </div>
+     <img src="/images/logo.PNG" class="logo">
     <nav class="header-nav">
         
       <div class="header-nav-item">
@@ -94,16 +92,16 @@
       <div class="header-nav-item">
             @guest
             <li class="header-nav-item-li">
-                            <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a href="{{ route('login') }}" class="login">{{ __('Login') }}</a>
                         {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                         @else
                            
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
                                 
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                   <div class="login-name"> {{ Auth::user()->name }}  </div>
+                                
+                                  <br>
+                                
+                                    <a class="login" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

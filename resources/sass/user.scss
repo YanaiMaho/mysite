@@ -55,8 +55,9 @@ h2 {
   margin-left: 16px;
 }
 
-.logo img {
-  width: 70px;
+.logo {
+  width: 250px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .header-avatar {
@@ -386,8 +387,16 @@ h3{
 
 
 
+.login-name{
+  color: #000;
+  font-size: 23px;
+  font-weight: 900;
+  margin-right: 0.2em;
+}
 
-
+.login{
+  color: #fff;
+}
 
 .contents{
  

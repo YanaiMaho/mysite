@@ -71,9 +71,9 @@
 
        <header class="header-4">
   <div class="header-inner">
-    <div class="logo">
-      <h1>GhibliWhere</h1>
-    </div>
+   
+      <img src="/images/logo.PNG" class="logo">
+    
     <nav class="header-nav">
         
       <div class="header-nav-item">
@@ -103,9 +103,7 @@
                         {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                         @else
                            
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                                 <div class="login-name"> {{ Auth::user()->name }}  </div>
 
                                 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
