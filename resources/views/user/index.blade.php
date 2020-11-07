@@ -153,7 +153,7 @@
             </div>
             
              <div class="indexbox3">
-            <h3>- - - - - - - - - - その他のタグから探す - - - - - - - - - -</h3>
+            <h3>- - - - - - - - - - タグから探す - - - - - - - - - -</h3>
             <div class="indexbox3_a">
                 <form action="{{ action('User\UserController@tagsearch') }}" method="get">
                     <ul class="horizontal_scroll">   

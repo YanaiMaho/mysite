@@ -348,8 +348,7 @@ h3 {
   font-size: 14px;
 }
 
-
-.btn-kaze{
+.btn-kaze {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -360,7 +359,7 @@ h3 {
   font-size: 14px;
 }
 
-.btn-gedo{
+.btn-gedo {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -371,7 +370,7 @@ h3 {
   font-size: 14px;
 }
 
-.btn-mani{
+.btn-mani {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -382,8 +381,7 @@ h3 {
   font-size: 14px;
 }
 
-
-.btn-kokuriko{
+.btn-kokuriko {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -394,7 +392,7 @@ h3 {
   font-size: 14px;
 }
 
-.btn-buta{
+.btn-buta {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -405,7 +403,7 @@ h3 {
   font-size: 14px;
 }
 
-.btn-neko{
+.btn-neko {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -416,7 +414,7 @@ h3 {
   font-size: 14px;
 }
 
-.btn-karigurashi{
+.btn-karigurashi {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -427,7 +425,7 @@ h3 {
   font-size: 14px;
 }
 
-.btn-other{
+.btn-other {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -436,10 +434,9 @@ h3 {
   background-image: url("../images/buta.PNG");
   color: #000;
   font-size: 14px;
- 
 }
 
-.btn-mimi{
+.btn-mimi {
   display: inline-block;
   padding: 5rem 8rem 5rem 8rem;
   width: 40%;
@@ -449,6 +446,7 @@ h3 {
   color: #000;
   font-size: 14px;
 }
+
 .login-name {
   color: #000;
   font-size: 23px;

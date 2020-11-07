@@ -130,8 +130,8 @@
                             <label for="借りぐらしのアリエッティ">借りぐらしのアリエッティ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='その他のアニメ' {{ old('anime','その他のアニメ') == 'その他のアニメ' ? 'checked' : '' }}>
-                            <label for="その他のアニメ">その他のアニメ</label>
+                            <input type="radio" name="anime" value='その他' {{ old('anime','その他') == 'その他' ? 'checked' : '' }}>
+                            <label for="その他">その他</label>
                             </div>
                             
                             
@@ -203,7 +203,7 @@
                          <hr>
                          
                          
-                         <label class="col-md-2">その他のタグ</label>
+                         <label class="col-md-2">タグ</label>
                         <div class="create-box2" >
                         
                         <div class="create-radio1">
