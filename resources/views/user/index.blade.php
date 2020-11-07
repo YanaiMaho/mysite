@@ -3,7 +3,7 @@
 
 
 {{-- admin.blade.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
-@section('title', 'Home:ghibliwhere ジブリスポット検索・投稿サイト')
+@section('title', 'ghibliwhere ジブリスポット検索・投稿サイト')
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
@@ -35,7 +35,8 @@
              <p class="title-p">検索・投稿サイトです</p>
              <br>
              <br>
-             <p class="title-p">＊投稿する方はアカウント登録をお願いします＊</p>
+             <p class="title-q">＊投稿する方はアカウント登録をお願いします＊</p>
+             
         </div>
         
         <br/><br/>
@@ -101,18 +102,18 @@
                             <button class="btn-rapyuta" type="submit" name="anime" value="天空の城ラピュタ">天空の城ラピュタ</button>
                             <button class="btn-majo" type="submit" name="anime" value="魔女の宅急">魔女の宅急便</button>
                             <button class="btn-kaonashi" type="submit" name="anime" value="千と千尋の神隠し">千と千尋の神隠し</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="ハウルの動く城">ハウルの動く城</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="崖の上のポニョ">崖の上のポニョ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="風立ちぬ">風立ちぬ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="ゲド戦記">ゲド戦記</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="思い出のマーニー">思い出のマーニー</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="コクリコ坂から">コクリコ坂から</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="カリオストロの城">カリオストロの城</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="紅の豚">紅の豚</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="耳を澄ませば">耳を澄ませば</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="猫の恩返し">猫の恩返し</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="借りぐらしのアリエッティ">借りぐらしのアリエッティ</button>
-                            <button class="btn-totoro" type="submit" name="anime" value="その他のアニメ">その他のアニメ</button>
+                            <button class="btn-hauru" type="submit" name="anime" value="ハウルの動く城">ハウルの動く城</button>
+                            <button class="btn-ponyo" type="submit" name="anime" value="崖の上のポニョ">崖の上のポニョ</button>
+                            <button class="btn-kaze" type="submit" name="anime" value="風立ちぬ">風立ちぬ</button>
+                            <button class="btn-gedo" type="submit" name="anime" value="ゲド戦記">ゲド戦記</button>
+                            <button class="btn-mani" type="submit" name="anime" value="思い出のマーニー">思い出のマーニー</button>
+                            <button class="btn-kokuriko" type="submit" name="anime" value="コクリコ坂から">コクリコ坂から</button>
+                            
+                            <button class="btn-buta" type="submit" name="anime" value="紅の豚">紅の豚</button>
+                            <button class="btn-mimi" type="submit" name="anime" value="耳を澄ませば">耳を澄ませば</button>
+                            <button class="btn-neko" type="submit" name="anime" value="猫の恩返し">猫の恩返し</button>
+                            <button class="btn-karigurashi" type="submit" name="anime" value="借りぐらしのアリエッティ">借りぐらしのアリエッティ</button>
+                            <button class="btn-other" type="submit" name="anime" value="その他のアニメ">その他のアニメ</button>
                 </ul>
                   </form>
                  

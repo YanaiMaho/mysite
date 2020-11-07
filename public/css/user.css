@@ -326,6 +326,129 @@ h3 {
   font-size: 14px;
 }
 
+.btn-hauru {
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/hauru.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-ponyo {
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/ponyo.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+
+.btn-kaze{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/kazetachinu.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-gedo{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/gedo.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-mani{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/mani.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+
+.btn-kokuriko{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/kokuriko.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-buta{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/kurenai.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-neko{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/neko.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-karigurashi{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/karigurashi.PNG");
+  color: #000;
+  font-size: 14px;
+}
+
+.btn-other{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/buta.PNG");
+  color: #000;
+  font-size: 14px;
+ 
+}
+
+.btn-mimi{
+  display: inline-block;
+  padding: 5rem 8rem 5rem 8rem;
+  width: 40%;
+  margin: 0.3rem;
+  text-decoration: none;
+  background-image: url("../images/mimi.PNG");
+  color: #000;
+  font-size: 14px;
+}
 .login-name {
   color: #000;
   font-size: 23px;

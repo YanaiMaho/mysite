@@ -1,5 +1,5 @@
 @extends('layouts.user')
-@section('title', 'mapから検索')
+@section('title', '地図から検索:ghibliwhere ジブリスポット検索・投稿サイト')
 
 @section('content')
 

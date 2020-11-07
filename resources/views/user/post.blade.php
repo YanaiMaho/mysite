@@ -1,5 +1,5 @@
 @extends('layouts.user')
-@section('title', '私の投稿')
+@section('title', '投稿:ghibliwhere ジブリスポット検索・投稿サイト')
 
 @section('content')
     <div class="container">

@@ -23,7 +23,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         {{-- 各ページごとにtitleタグを入れるために@yieldで空けておきます。 --}}
-        <title>@yield('title')</title>
+        <title>ghibliwhere ジブリスポット検索・投稿サイト</title>
 
        
 

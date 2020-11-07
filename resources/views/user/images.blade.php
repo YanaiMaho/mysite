@@ -1,5 +1,5 @@
 @extends('layouts.user')
-@section('title', '写真から探す')
+@section('title', '画像から検索:ghibliwhere ジブリスポット検索・投稿サイト')
 
 @section('content')
     <div class="image-container">
