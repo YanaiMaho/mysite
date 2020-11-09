@@ -17,7 +17,7 @@
                                 
                                     <div class=""> 
                                     <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">
-                                <img src="{{ $art->image ?? '' }}" width="200" height="200"></a>
+                                <img src="{{ $art->image }}" width="200" height="200"></a>
                                </div>
                                 <div class="osusume_name">
                                 {{ str_limit($art->name, 100) }}

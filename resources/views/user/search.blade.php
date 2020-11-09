@@ -10,6 +10,7 @@
                                 <tr>
                                 
                                     <img src="{{ $art->image }}">
+                                    
                                 <a href="{{ action('User\UserController@show', ['id' => $art->id])}}">button</a></a>
                                 </tr>
                                 <br/>

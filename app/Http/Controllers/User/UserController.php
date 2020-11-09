@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Article;
 use App\User;
 use Illuminate\Support\Facades\Auth;
-
+use Storage;
 
 class UserController extends Controller
 {
@@ -45,8 +45,8 @@ public function create(Request $request)
 
       // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
       if (isset($form['image'])) {
-        $path = $request->file('image')->store('public/image');
-        $art->image = basename($path);
+       $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+       $art->image = Storage::disk('s3')->url($path);
       } else {
           $art->image= null;
       }
@@ -55,22 +55,22 @@ public function create(Request $request)
     
       
       if (isset($form['image1'])) {
-        $path = $request->file('image')->store('public/image');
-        $art->image1 = basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image1'],'public');
+         $art->image1 = Storage::disk('s3')->url($path);
       } else {
           $art->image1 = null;
       }
       
      if (isset($form['image2'])) {
-        $path = $request->file('image')->store('public/image');
-        $art->image2= basename($path);
+       $path = Storage::disk('s3')->putFile('/',$form['image2'],'public');
+       $art->image2 = Storage::disk('s3')->url($path);
       } else {
           $art->image2= null;
       }
       
       if (isset($form['image3'])) {
-        $path = $request->file('image')->store('public/image');
-        $art->image3= basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image3'],'public');
+        $art->image3 = Storage::disk('s3')->url($path);
       } else {
           $art->image3= null;
       }
@@ -148,8 +148,8 @@ public function create(Request $request)
       $articles_form = $request->all();
      
       if (isset($articles_form['image'])) {
-        $path = $request->file('image')->store('public/image');
-        $art->image= basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $art->image = Storage::disk('s3')->url($path);
         unset($articles_form['image']);
       } elseif (isset($request->remove)) {
         $art->image= null;
@@ -158,8 +158,8 @@ public function create(Request $request)
       
       
       if (isset($articles_form['image1'])) {
-        $path = $request->file('image1')->store('public/image1');
-        $art->image1= basename($path);
+       $path = Storage::disk('s3')->putFile('/',$form['image1'],'public');
+       $art->image1 = Storage::disk('s3')->url($path);
         unset($articles_form['image1']);
       } elseif (isset($request->remove)) {
         $art->image1= null;
@@ -169,8 +169,8 @@ public function create(Request $request)
       
       
       if (isset($articles_form['image2'])) {
-        $path = $request->file('image2')->store('public/image2');
-        $art->image2= basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image2'],'public');
+        $art->image2 = Storage::disk('s3')->url($path);
         unset($articles_form['image2']);
       } elseif (isset($request->remove)) {
         $art->image2= null;
@@ -179,8 +179,8 @@ public function create(Request $request)
       
       
       if (isset($articles_form['image3'])) {
-        $path = $request->file('image3')->store('public/image3');
-        $art->image3= basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image3'],'public');
+        $art->image3 = Storage::disk('s3')->url($path);
         unset($articles_form['image']);
       } elseif (isset($request->remove)) {
         $art->image3= null;

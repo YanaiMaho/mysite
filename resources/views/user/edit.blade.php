@@ -224,7 +224,9 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        <img src="{{ $art->image ?? '' }}" width="200" height="200">
+                        @if ($post->image)
+                        <img src="{{ $art->image }}" width="200" height="200">
+                        @endif
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image"></li>
@@ -241,7 +243,9 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        <img src="{{ $art->image1 ?? '' }}" width="200" height="200">
+                        @if ($post->image1)
+                        <img src="{{ $art->image1 }}" width="200" height="200">
+                        @endif
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image1"></li>
@@ -257,8 +261,9 @@
                         <br>
                         <ul>
                         <li class="create-box3-li">
-                            
-                        <img src="{{ $art->image2 ?? '' }}" width="200" height="200">
+                        @if ($post->image2)
+                        <img src="{{ $art->image2 }}" width="200" height="200">
+                        @endif
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image2"></li>
@@ -275,7 +280,9 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        <img src="{{ $art->image3 ?? '' }}" width="200" height="200">
+                        @if ($post->image3)
+                        <img src="{{ $art->image3 }}" width="200" height="200">
+                        @endif
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image3"></li>

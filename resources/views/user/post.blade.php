@@ -17,7 +17,7 @@
                                 
                                
                                
-                                <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}"><img src="{{ $art->image ?? '' }}" width="200" height="200"></a>
+                                <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}"><img src="{{ $art->image }}" width="200" height="200"></a>
                                 
                                
                                
