@@ -224,8 +224,8 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($art->image)
-                        <img src="{{ $art->image }}" width="200" height="200">
+                        @if ($$articles_form->image)
+                        <img src="{{ $articles_form->image }}" width="200" height="200">
                         @endif
                         </li>
                         
@@ -243,8 +243,8 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($art->image1)
-                        <img src="{{ $art->image1 }}" width="200" height="200">
+                        @if ($articles_form->image1)
+                        <img src="{{ $articles_form->image1 }}" width="200" height="200">
                         @endif
                         </li>
                         
@@ -261,8 +261,8 @@
                         <br>
                         <ul>
                         <li class="create-box3-li">
-                        @if ($art->image2)
-                        <img src="{{ $art->image2 }}" width="200" height="200">
+                        @if ($articles_form->image2)
+                        <img src="{{ $articles_form->image2 }}" width="200" height="200">
                         @endif
                         </li>
                         
@@ -280,8 +280,8 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($art->image3)
-                        <img src="{{ $art->image3 }}" width="200" height="200">
+                        @if ($articles_form->image3)
+                        <img src="{{ $articles_form->image3 }}" width="200" height="200">
                         @endif
                         </li>
                         
