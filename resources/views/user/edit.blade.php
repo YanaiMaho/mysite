@@ -224,7 +224,7 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($post->image)
+                        @if ($art->image)
                         <img src="{{ $art->image }}" width="200" height="200">
                         @endif
                         </li>
@@ -243,7 +243,7 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($post->image1)
+                        @if ($art->image1)
                         <img src="{{ $art->image1 }}" width="200" height="200">
                         @endif
                         </li>
@@ -261,7 +261,7 @@
                         <br>
                         <ul>
                         <li class="create-box3-li">
-                        @if ($post->image2)
+                        @if ($art->image2)
                         <img src="{{ $art->image2 }}" width="200" height="200">
                         @endif
                         </li>
@@ -280,7 +280,7 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($post->image3)
+                        @if ($art->image3)
                         <img src="{{ $art->image3 }}" width="200" height="200">
                         @endif
                         </li>
