@@ -65,12 +65,12 @@
                             <label for="となりのトトロ">となりのトトロ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='nausika' {{ old('anime','nausika') == 'nausika' ? 'checked' : '' }}>
-                            <label for="nausika">風の谷のナウシカ</label>
+                            <input type="radio" name="anime" value='風の谷のナウシカ' {{ old('anime','風の谷のナウシカ') == '風の谷のナウシカ' ? 'checked' : '' }}>
+                            <label for="風の谷のナウシカ">風の谷のナウシカ</label>
                             </div>
                             <div class="create-radio1">
-                            <input type="radio" name="anime" value='mononoke' {{ old('anime','mononoke') == 'mononoke' ? 'checked' : '' }}>
-                            <label for="mononoke">もののけ姫</label>
+                            <input type="radio" name="anime" value='もののけ姫' {{ old('anime','もののけ姫') == 'もののけ姫' ? 'checked' : '' }}>
+                            <label for="もののけ姫">もののけ姫</label>
                             </div>
                             <div class="create-radio1">
                             <input type="radio" name="anime" value='天空の城ラピュタ' {{ old('anime','天空の城ラピュタ') == '天空の城ラピュタ' ? 'checked' : '' }}>
