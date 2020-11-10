@@ -148,7 +148,7 @@ public function create(Request $request)
       $articles_form = $request->all();
      
       if (isset($articles_form['image'])) {
-        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $path = Storage::disk('s3')->putFile('/',$articles_form['image'],'public');
         $art->image = Storage::disk('s3')->url($path);
         unset($articles_form['image']);
       } elseif (isset($request->remove)) {
@@ -158,7 +158,7 @@ public function create(Request $request)
       
       
       if (isset($articles_form['image1'])) {
-       $path = Storage::disk('s3')->putFile('/',$form['image1'],'public');
+       $path = Storage::disk('s3')->putFile('/',$articles_form['image1'],'public');
        $art->image1 = Storage::disk('s3')->url($path);
         unset($articles_form['image1']);
       } elseif (isset($request->remove)) {
@@ -169,7 +169,7 @@ public function create(Request $request)
       
       
       if (isset($articles_form['image2'])) {
-        $path = Storage::disk('s3')->putFile('/',$form['image2'],'public');
+        $path = Storage::disk('s3')->putFile('/',$articles_form['image2'],'public');
         $art->image2 = Storage::disk('s3')->url($path);
         unset($articles_form['image2']);
       } elseif (isset($request->remove)) {
@@ -179,7 +179,7 @@ public function create(Request $request)
       
       
       if (isset($articles_form['image3'])) {
-        $path = Storage::disk('s3')->putFile('/',$form['image3'],'public');
+        $path = Storage::disk('s3')->putFile('/',$articles_form['image3'],'public');
         $art->image3 = Storage::disk('s3')->url($path);
         unset($articles_form['image']);
       } elseif (isset($request->remove)) {

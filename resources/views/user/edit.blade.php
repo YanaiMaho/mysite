@@ -64,6 +64,8 @@
                         
                        <label class="col-md-2">作品タグ</label>
                          <div class="create-box">
+                             <p style="color: red;">＊再度選択をお願いします＊</p>
+                             <br>
                         
                              <div class="create-radio1">
                             <input type="radio" name="anime" value='となりのトトロ' {{ old('anime','となりのトトロ') == 'となりのトトロ' ? 'checked' : '' }}>
@@ -151,34 +153,66 @@
                         <hr>
                         
                          
+                         
                         <label class="col-md-2">地域</label>  
                         <div class="create-box" >
+                          <p style="color: red;">＊再度選択をお願いします＊</p>
+                             <br>
+                        
                          
-                         
-                                 
-                        <div class="create-radio1">
-                            <input type="radio" name="tag" value='山' {{ old('tag','山') == 'tag' ? '山' : '' }}>
-                            <label for="山">山</label>
+                            <div class="create-radio1">
+                         <input type="radio" name="area" value='北海道' {{ old('area','北海道') == 'area' ? '北海道' : '' }}>
+                            <label for="北海道">北海道</label>
                             </div>
-                        <div class="create-radio1">
-                            <input type="radio" name="tag" value='川' {{ old('tag','川') == 'tag' ? '川' : '' }}>
-                            <label for="川">川</label>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='東北' {{ old('area','東北') == 'area' ? '東北' : '' }}>
+                            <label for="東北">東北</label>
                             </div>
-                        <div class="create-radio1">
-                           <input type="radio" name="tag" value='海' {{ old('tag','海') == 'tag' ? '海' : '' }}>
-                            <label for="海">海</label>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='北陸' {{ old('area','北陸') == 'area' ? '北陸' : '' }}>
+                            <label for="北陸">北陸</label>
                             </div>
-                        <div class="create-radio1">
-                            <input type="radio" name="tag" value='街' {{ old('tag','街') == 'tag' ? '街' : '' }}>
-                            <label for="街">街</label>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='甲信越' {{ old('area','甲信越') == 'area' ? '甲信越' : '' }}>
+                            <label for="甲信越">甲信越</label>
                             </div>
-                        <div class="create-radio1">
-                          <input type="radio" name="tag" value='景色' {{ old('tag','景色') == 'tag' ? '景色' : '' }}>
-                            <label for="景色">景色</label>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='関東' {{ old('area','関東') == 'area' ? '関東' : '' }}>
+                            <label for="関東">関東</label>
                             </div>
-                        <div class="create-radio1">
-                          <input type="radio" name="tag" value='建物' {{ old('tag','建物') == 'tag' ? '建物' : '' }}>
-                            <label for="建物">建物</label>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='東' {{ old('area','東') == 'area' ? '東' : '' }}>
+                            <label for="東">東海</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='関西' {{ old('area','関西') == 'area' ? '関西' : '' }}>
+                            <label for="関西">関西</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='四国' {{ old('area','四国') == 'area' ? '四国' : '' }}>
+                            <label for="四国">四国</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='中国' {{ old('area','中国') == 'area' ? '中国' : '' }}>
+                            <label for="中国">中国</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='九州' {{ old('area','九州') == 'area' ? '九州' : '' }}>
+                            <label for="九州">九州</label>
+                            </div>
+                            
+                            <div class="create-radio1">
+                        <input type="radio" name="area" value='沖縄' {{ old('area','沖縄') == 'area' ? '沖縄' : '' }}>
+                            <label for="沖縄">沖縄</label>
                             </div>
                         
                         </div>
@@ -188,6 +222,8 @@
                          
                          <label class="col-md-2">その他のタグ</label>
                         <div class="create-box2" >
+                            <p style="color: red;">＊再度選択をお願いします＊</p>
+                             <br>
                         
                         <div class="create-radio1">
                             <input type="radio" name="tag" value='山' {{ old('tag','山') == 'tag' ? '山' : '' }}>
@@ -217,16 +253,18 @@
                         
                         <hr>
                         
-                        
+                        <p style="color: red;">　　　　　＊再度選択をお願いします＊</p>
+                             <br>
                          <div class="create-box3" >
+                             
                         <label class="col-md-2">メイン画像</label>
                         <br>
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($$articles_form->image)
+                       
                         <img src="{{ $articles_form->image }}" width="200" height="200">
-                        @endif
+                       
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image"></li>
@@ -243,9 +281,9 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($articles_form->image1)
+                        
                         <img src="{{ $articles_form->image1 }}" width="200" height="200">
-                        @endif
+                       
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image1"></li>
@@ -261,9 +299,9 @@
                         <br>
                         <ul>
                         <li class="create-box3-li">
-                        @if ($articles_form->image2)
+                       
                         <img src="{{ $articles_form->image2 }}" width="200" height="200">
-                        @endif
+                       
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image2"></li>
@@ -280,9 +318,9 @@
                         <ul>
                         <li class="create-box3-li">
                             
-                        @if ($articles_form->image3)
+                      
                         <img src="{{ $articles_form->image3 }}" width="200" height="200">
-                        @endif
+                       
                         </li>
                         
                          <li class="create-box3-li"><input type="file" class="form-control-file" name="image3"></li>

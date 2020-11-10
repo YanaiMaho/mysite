@@ -25,18 +25,24 @@
                                 
                                 @if( $art->image1  != null)
                                 <li>
+                                    <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">
                                     <img src="{{ $art->image1 }}" class="img">
+                                    </a>
                                 </li>
                                 @endif
                                 
                                 @if( $art->image2  != null)
                                 <li>
+                                    <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">
                                     <img src="{{ $art->image2 }}" class="img">
+                                    </a>
                                 </li>
                                 @endif
                                 @if( $art->image3 != null)
                                 <li>
+                                    <a href="{{ action('User\UserController@show', ['id' => $art->id]) }}">
                                     <img src="{{ $art->image3 }}" class="img">
+                                    </a>
                                 </li>
                                @endif
                                     
